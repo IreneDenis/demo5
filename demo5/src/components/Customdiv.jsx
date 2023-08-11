@@ -62,7 +62,7 @@ const Customdiv=(props)=> {
         }}>
             <button style={{
                 borderRadius:"20px"
-            }}>Add to Cart</button>
+            }}>Add to Cart</button> 
 
         </div>
 

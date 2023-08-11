@@ -5,6 +5,7 @@ import Product from '../components/Product'
 import Customdiv from '../components/Customdiv'
 import BG from '../assets/Images/BG.jpg'
 import BG1 from '../assets/Images/BG1.jpg'
+// import Login from './Login'
 
 
 const Homepage=()=> {

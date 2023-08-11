@@ -11,7 +11,7 @@ export const Custmdiv=(props)=> {
         flexDirection:"column",
         alignItems:"center",
         fontFamily:"sans-serif",
-        border:"1px solid black",
+        // border:"2px solid black",
         
 
 
@@ -28,9 +28,10 @@ export const Custmdiv=(props)=> {
         }}>
             <img style={{
                 display:"flex",
-                height:"90%",
-                width:"90%"
-            }} src={data.thumbnail}/>
+                height:"110%",
+                width:"120%",
+                border:"2px solid black",
+            }} src={data}/>
         </div>
 
     </div>

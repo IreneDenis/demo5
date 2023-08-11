@@ -85,29 +85,37 @@ const Product=()=> {
               flexDirection:"row",
               backgroundColor:"lightcyan",
               justifyContent:"center",
-              border:"1px solid blue",
-              height:"90%",
+              // border:"2px solid black",
+              height:"122%",
               width:"60%",
               marginTop:"0.5%",
+              marginRight:"0.5%",
              }}>
               <div style={{
               display:"flex",
               backgroundColor:"grey",
-              border:"1px solid black",
+              // border:"1px solid black",
               height:"100%",
               width:"50%",
-              paddingLeft:"30px",
+              // paddingLeft:"30px",
+              justifyContent:"center",
+              marginRight:"1.5%",
 
 
 
-              }}><img src={data?.thumbnails}/>
+              }}><img style={{
+                border:"2px solid black",
+                
+                
+              }} 
+              src={data?.thumbnail}/>
               
                 
 
              </div>
              <div style={{
               display:"flex",
-              border:"1px solid pink",
+              border:"2px solid black",
               height:"100%",
               width:"50%",
               backgroundColor:"lightcyan",
@@ -116,36 +124,53 @@ const Product=()=> {
              }}>
               <div style={{
                 display:"flex",
-                border:"1px solid green",
+                // border:"1px solid green",
                 height:"33%",
                 width:"100%",
+                color:"black",
+                fontWeight:"bold",
+                fontSize:"1.7em",
+                flexDirection:"column",
+                alignItems:"center",
 
-              }}>
+              }}> {data?.title}
+              <div style={{
+                fontSize:"0.5em",
+              }}>rating: {data?.rating}</div>
 
               </div>
               <div style={{
                 display:"flex",
-                border:"1px solid pink",
+                // border:"1px solid pink",
                 height:"15%",
                 width:"100%",
                 marginTop:"2px",
+                color:"black",
+                fontWeight:"bold",
+                fontSize:"1.1em",
+                alignItems:"center",
 
                 
-              }}>
+              }}> price: ${data?.price}.00
+              
 
               </div>
               <div style={{
                 display:"flex",
-                border:"1px solid black",
+                // border:"1px solid black",
                 height:"20%",
                 width:"100%",
                 marginTop:"2px",
-              }}>
+                color:"black",
+                fontWeight:"bold",
+                fontSize:"1.2em",
+              }}> get a discount of {data?.discountPercentage}%
+              
 
               </div>
               <div style={{
                 display:"flex",
-                border:"1px solid green",
+                // border:"1px solid green",
                 height:"28%",
                 width:"100%",
                 marginTop:"2px",
@@ -159,10 +184,11 @@ const Product=()=> {
                   justifyContent:"center",
                   alignItems:"center",
                   alignContent:"space-evenly",
+                  flexDirection:"row",
                   
 
 
-                }}>
+                 }}>
                   <div style={{
                     display:"flex",
                     height:"80%",
@@ -176,7 +202,7 @@ const Product=()=> {
                     <div style={{
                       display:"flex",
                       flexDirection:"row",
-                      // border:"1px solid black",
+                      border:"2px solid black",
                       width:"30%",
                       height:"80%",
                       borderRadius:"20px",
@@ -187,9 +213,10 @@ const Product=()=> {
                     }}>
                       <button style={{
                         color:"black",
-                        backgroundColor:"whitesmoke",
+                        backgroundColor:"darkgreen",
                         borderRadius:"20px",
                         width:"100%",
+                        fontSize:"1.1em",
 
                         }}
                         onClick={()=>setCount((prevcount)=>prevcount-1)}>-</button>
@@ -208,7 +235,7 @@ const Product=()=> {
 
                       }}><button style={{
                         color:"black",
-                        backgroundColor:"whitesmoke",
+                        backgroundColor:"white",
                         borderRadius:"20px",
                         width:"100%",
                         }}>{count}</button>
@@ -218,22 +245,28 @@ const Product=()=> {
                         display:"flex",
                         height:"80%",
                         width:"30%",
-                        // border:"1px solid black",
+                        border:"2px solid black",
                         borderRadius:"20px",
                         
                         
 
                       }}><button style={{
                         color:"black",
-                        backgroundColor:"whitesmoke",
+                        backgroundColor:"darkgreen",
                         borderRadius:"20px",
                         width:"100%",
+                        fontSize:"1.1em",
                       }}
                       onClick={()=>setCount((prevcount)=>prevcount+1)}>+</button>
 
                       </div>
+                      
 
                   </div>
+                  <div style={{
+                    color:"black",
+                    fontWeight:"bold",
+                  }}> stocks remain: {data?.stock}</div>
 
                 </div>
                 <div style={{
