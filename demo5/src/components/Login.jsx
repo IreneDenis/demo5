@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import BG4 from '../assets/Images/BG4.jpg'
 import Button from './Button'
