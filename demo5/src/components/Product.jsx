@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-key */
 import React, { useState } from 'react'
 import Homepage from './Homepage'
 import BG from '../assets/Images/BG.jpg'

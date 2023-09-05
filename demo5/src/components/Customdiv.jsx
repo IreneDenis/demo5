@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Product from './Product';
 
 const Customdiv=(props)=> {
-    const{data} =props;
+    const data =props;
   return (
     <div style={{
         display:"flex",
